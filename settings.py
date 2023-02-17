@@ -1,6 +1,6 @@
 import os
 import psycopg2
-from dotenv import load_dotenv  
+from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -14,3 +14,4 @@ db_port = os.getenv('DB_PORT')
 connection = psycopg2.connect(
     f"dbname={db_name} user={db_user} password={db_password} host={db_host} port={db_port}"
 )
+
